@@ -5,15 +5,15 @@ public class Audio {
     private String autor;
     private int duracion;
     private int calificacion;
-    private int meGusta;
+    private int totalMeGusta;
     private int totalReproducciones;
 
     public void setCalificacion(int calificacion) {
         this.calificacion = calificacion;
     }
 
-    public void setMeGusta(int meGusta) {
-        this.meGusta = meGusta;
+    public void meGusta() {
+        this.totalMeGusta++;
     }
 
     public void setDuracion(int duracion) {
@@ -45,15 +45,15 @@ public class Audio {
     }
 
     public int getMeGusta() {
-        return meGusta;
+        return totalMeGusta;
     }
 
     public int getTotalReproducciones() {
         return totalReproducciones;
     }   
 
-    public void setTotalReproducciones(int totalReproducciones) {
-        this.totalReproducciones = totalReproducciones;
+    public void reproduce() {
+        this.totalReproducciones++;
     }
 
 }
